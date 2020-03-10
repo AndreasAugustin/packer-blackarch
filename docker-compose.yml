@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  packer:
+    build: 
+      context: .
+      target: packer
+    volumes:
+      - .:/app/
